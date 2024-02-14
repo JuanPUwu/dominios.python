@@ -64,8 +64,22 @@ class Empleado():
     cliente2 = Cliente("Pedro Hernandez higuera",1178382312,3148762531,lista_carros=[])
     cupo1 = Cupo("A") 
     cupo2 = Cupo("B")
-    empleado1 = ("Ricardo Orjuela",7728)  
-    empleado2 = ("Carlos Ortiz",7729)
+    empleado1 = Empleado("Ricardo Orjuela",7728)  
+    empleado2 = Empleado("Carlos Ortiz",7729)
     pago1 = Pago("12/09/2024","12:30PM","24/09/2024","09:14AM","86000",cliente1.lista_carros[0],cupo1,empleado1)
     pago2 = Pago("09/07/2024","08:18AM","12/08/2024","02:47PM","103000",cliente1.lista_carros[1],cupo2,empleado2)
+"""
+"""
+    pagos=[]
+    pagos.append(pago1)
+    pagos.append(pago2)
+    for r in pagos:   
+...     print("carro: "+ r.carro.placa) *imprime unicamente el atributo placa*
+        print("valor: "+ str(r.valor)) *imprime unicamente el atributo valor*
+        print("id_empleado: "+ str(r.nombre_empleado.id_empleado)) *imprime el id del empleado*
+        print("fecha_inicio: "+ r.fecha_inicio) *imprime la fecha de inicio*
+        print("hora_inicio: "+ r.hora_inicio) *imprime la hora de inicio*
+        print("fecha_fin: "+ r.fecha_fin) *imprime la fecha final*
+        print("hora_fin: "+ r.hora_fin) *imprime la hora final*
+        
 """
